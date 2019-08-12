@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L esp32:MT3608 U1
+U 1 1 5D51A6CB
+P 5950 3250
+F 0 "U1" H 5950 3615 50  0000 C CNN
+F 1 "MT3608" H 5950 3524 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6650 2950 50  0001 C CNN
+F 3 "" H 5950 3400 50  0001 C CNN
+	1    5950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5D51B79D
+P 4600 3350
+F 0 "J1" H 4657 3817 50  0000 C CNN
+F 1 "USB_B_Micro" H 4657 3726 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 4750 3300 50  0001 C CNN
+F 3 "~" H 4750 3300 50  0001 C CNN
+	1    4600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D51C789
+P 4600 3950
+F 0 "#PWR0101" H 4600 3700 50  0001 C CNN
+F 1 "GND" H 4605 3777 50  0000 C CNN
+F 2 "" H 4600 3950 50  0001 C CNN
+F 3 "" H 4600 3950 50  0001 C CNN
+	1    4600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D51CF24
+P 5950 3800
+F 0 "#PWR0102" H 5950 3550 50  0001 C CNN
+F 1 "GND" H 5955 3627 50  0000 C CNN
+F 2 "" H 5950 3800 50  0001 C CNN
+F 3 "" H 5950 3800 50  0001 C CNN
+	1    5950 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D51DC8B
+P 5400 3400
+F 0 "C1" H 5450 3500 50  0000 L CNN
+F 1 "22uF" H 5450 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 3250 50  0001 C CNN
+F 3 "~" H 5400 3400 50  0001 C CNN
+	1    5400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3150 5600 3150
+Wire Wire Line
+	4600 3750 4600 3850
+Wire Wire Line
+	4600 3850 4500 3850
+Wire Wire Line
+	4500 3850 4500 3750
+Connection ~ 4600 3850
+Wire Wire Line
+	4600 3850 4600 3950
+Wire Wire Line
+	5400 3550 5400 3700
+Wire Wire Line
+	5400 3700 5950 3700
+Wire Wire Line
+	5950 3700 5950 3600
+Wire Wire Line
+	5950 3700 5950 3800
+Connection ~ 5950 3700
+Wire Wire Line
+	5400 3250 5400 3150
+Connection ~ 5400 3150
+Wire Wire Line
+	5400 3150 4900 3150
+Wire Wire Line
+	5700 3250 5600 3250
+Wire Wire Line
+	5600 3250 5600 3150
+Connection ~ 5600 3150
+Wire Wire Line
+	5600 3150 5400 3150
+$Comp
+L Device:L L1
+U 1 1 5D522235
+P 5950 2700
+F 0 "L1" V 6140 2700 50  0000 C CNN
+F 1 "22uH" V 6049 2700 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 5950 2700 50  0001 C CNN
+F 3 "~" H 5950 2700 50  0001 C CNN
+	1    5950 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 2700 5400 2700
+Wire Wire Line
+	5400 2700 5400 3150
+Wire Wire Line
+	6100 2700 6300 2700
+Wire Wire Line
+	6300 2700 6300 3150
+Wire Wire Line
+	6300 3150 6200 3150
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D5241FF
+P 7450 2700
+F 0 "J2" H 7530 2692 50  0000 L CNN
+F 1 "Conn_01x02" H 7530 2601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7450 2700 50  0001 C CNN
+F 3 "~" H 7450 2700 50  0001 C CNN
+	1    7450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5D525182
+P 6550 2700
+F 0 "D1" H 6550 2484 50  0000 C CNN
+F 1 "D_Schottky" H 6550 2575 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Castellated" H 6550 2700 50  0001 C CNN
+F 3 "~" H 6550 2700 50  0001 C CNN
+	1    6550 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D5259FA
+P 7150 2900
+F 0 "#PWR0103" H 7150 2650 50  0001 C CNN
+F 1 "GND" H 7155 2727 50  0000 C CNN
+F 2 "" H 7150 2900 50  0001 C CNN
+F 3 "" H 7150 2900 50  0001 C CNN
+	1    7150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2700 6700 2700
+Wire Wire Line
+	6400 2700 6300 2700
+Connection ~ 6300 2700
+Wire Wire Line
+	7250 2800 7150 2800
+Wire Wire Line
+	7150 2800 7150 2900
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D5267FB
+P 7700 5250
+F 0 "H1" H 7800 5250 50  0000 L CNN
+F 1 "~" H 7800 5205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7700 5250 50  0001 C CNN
+F 3 "~" H 7700 5250 50  0001 C CNN
+	1    7700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D526E4B
+P 7700 5400
+F 0 "H2" H 7800 5400 50  0000 L CNN
+F 1 "~" H 7800 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7700 5400 50  0001 C CNN
+F 3 "~" H 7700 5400 50  0001 C CNN
+	1    7700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D5272A7
+P 7700 5550
+F 0 "H3" H 7800 5550 50  0000 L CNN
+F 1 "~" H 7800 5505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7700 5550 50  0001 C CNN
+F 3 "~" H 7700 5550 50  0001 C CNN
+	1    7700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D5276D0
+P 7700 5700
+F 0 "H4" H 7800 5700 50  0000 L CNN
+F 1 "~" H 7800 5655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7700 5700 50  0001 C CNN
+F 3 "~" H 7700 5700 50  0001 C CNN
+	1    7700 5700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
